@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- HEADER / NAVIGATION (Identique aux autres pages) -->
+    <!-- HEADER / NAVIGATION -->
     <header class="site-header">
         <div class="header-container">
             <div class="logo-area">
@@ -28,10 +28,17 @@
     <section class="contact-section">
         <div class="section-container">
             <h2 class="section-title">GET IN TOUCH</h2>
-            <p class="contact-subtitle">Have a business inquiry, a game bug report, or just want to say hi ? Drop a message below ! It's free !</p>
+            <p class="contact-subtitle">Have a business inquiry, a game bug report, or just want to say hi? Drop a message below!</p>
             
             <div class="contact-container">
-                <form class="contact-form" action="#" method="POST">
+                <!-- FORMULAIRE ADAPTÉ POUR WEB3FORMS -->
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    
+                    <!-- Web3Forms Config Obligatoire -->
+                    <input type="hidden" name="access_key" value="eecb1908-2596-4672-ae48-ecb571434ffb">
+                    <!-- Redirection optionnelle après envoi (Décommente et change si besoin) -->
+                    <!-- <input type="hidden" name="redirect" value="https://nelyxoff.github.io/thanks.html"> -->
+
                     <div class="form-group">
                         <label for="name">Name / Username</label>
                         <input type="text" id="name" name="name" placeholder="Enter your name" required>

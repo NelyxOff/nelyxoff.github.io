@@ -325,3 +325,77 @@ body {
 .animate-pulse {
     animation: pulse 4s infinite alternate;
 }
+
+/* CONTACT PAGE STYLES */
+.contact-section {
+    padding-top: 100px;
+    min-height: calc(100vh - 80px);
+    background: radial-gradient(circle at center, #140824 0%, var(--dark-bg) 80%);
+}
+
+.contact-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    margin-top: -30px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(110, 0, 247, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    color: #d1d1e0;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #0d0d14;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 10px rgba(110, 0, 247, 0.3);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border: none;
+    border-radius: 6px;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}

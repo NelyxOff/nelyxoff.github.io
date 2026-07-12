@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nelyx Official</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION (Identique aux autres pages) -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="logo.jpg" alt="Nelyx Logo" class="nav-logo">
+                <span class="brand-name">NELYX</span>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#youtube" class="nav-link">YouTube</a>
+                <a href="index.html#games" class="nav-link">My Games</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <p class="contact-subtitle">Have a business inquiry, a game bug report, or just want to say hi? Drop a message below!</p>
+            
+            <div class="contact-container">
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name / Username</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Nelyx. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
